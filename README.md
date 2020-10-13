@@ -48,7 +48,6 @@ HC-12 wireless serial port communication module is a new-generation multichannel
    3. Third unit (Control room)
          ![Plan - design](https://user-images.githubusercontent.com/43223792/95824164-6f3ee300-0d4c-11eb-8f20-ef3653997f0c.png)
 
-
 All the data collected from the S-Health system (of each individual soldier) is sent to the Squadron leader of the second unit via a wireless sensor module (HC-12 transmitter). The same procedure is repeated and the data from the second unit (including the data of the each soldiers and the squadron leader) is sent to the third unit...i.e. Control Room, where it is all about collecting all the data at one place so if any soldier is in trouble then he/she can be tracked down and help can be sent for the individual.
 
 #### APPLICATIONS
@@ -60,13 +59,13 @@ All the data collected from the S-Health system (of each individual soldier) is 
 
 #### FUTURE SCOPE
    * #### Algorithms and Models
-   ###### These can be implemented in the future so as to have more precision in the data collected.
+   ###### These can be implemented in the future so as to have more precision in the data collected form the soldiers.
 
    * #### Data Management 
-   ###### This can be implemented in the future so as to handle to the huge data that is incoming from the soldiers.
+   ###### This can be implemented in the future so as to handle to the huge data that is incoming from the soldiers and the squadron leader.
 
    * #### Cyber security
-   ###### This can be implemented in the future so as to secure the RF channel from where the all the data has to transmitted and received.
+   ###### This can be implemented in the future so as to secure the RF channel transmission from where the all the data has to transmitted and received.
 
    * #### Power Management
-   ###### This can be implemented in the near future so as we have reduced the power consumption and the total efficiency of the whole system.
+   ###### This can be implemented in the future so that we have reduced power consumption and increased the total efficiency of the whole system.
