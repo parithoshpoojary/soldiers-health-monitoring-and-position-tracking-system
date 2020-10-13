@@ -1,10 +1,11 @@
 # Soldiers Health Monitoring and Position Tracking System
-
-    The Soldier Health Monitoring and Position Tracking System allows the military personnel to track the current GPS position of a soldier and also checks the health status including body temperature and heartbeat of a soldier.
+    The Soldier Health Monitoring and Position Tracking System allows the military personnel to track the current 
+    GPS position of a soldier and also checks the health status including body temperature and heartbeat of a soldier.
 
 ### Introduction
-
-    In today’s era, enemy warfare is an important factor in any nation’s security. The national security mainly depends on Army, Navy and Air Force. The most important and vital role is played by the soldiers. So, in order to protect soldiers there should be some technology too. So, to support this idea, in this project I have come up with a system which will track soldiers position as well as give their health status during a operation/mission.
+    In today’s era, enemy warfare is an important factor in any nation’s security. The national security mainly depends on Army, Navy and Air Force. 
+	The most important and vital role is played by the soldiers. So, in order to protect soldiers there should be some technology too. So, to support 
+	this idea, in this project I have come up with a system which will track soldiers position as well as give their health status during a operation/mission.
 
 ###### This system in particular will be useful for individuals, who involve in missions or in special operations.
 
