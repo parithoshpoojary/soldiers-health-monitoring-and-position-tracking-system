@@ -1,7 +1,8 @@
 # Soldiers Health Monitoring and Position Tracking System
 
-    The Soldier Health Monitoring and Position Tracking System allows the military personnel to track the current GPS 
-    position of a soldier and also checks the health status including body temperature and heartbeat of a soldier.
+    The Soldier Health Monitoring and Position Tracking System allows the military personnel 
+    to track the current GPS position of a soldier and also checks the health status including 
+    body temperature and heartbeat of a soldier.
 
 ### Introduction
 
@@ -38,7 +39,7 @@ GPS sensors are receivers with antennas that use a satellite-based navigation sy
 * #### HC-12 Sensor
 HC-12 wireless serial port communication module is a new-generation multichannel embedded wireless data transmission module. The HC-12 is a half-duplex 20 dBm (100 mW) transmitter paired with a receiver that has -117 dBm (2×10-15 W) sensitivity at 5000 bps. Paired with an external antenna, these transceivers are capable of communicating up to and possibly slightly beyond 1 km in the open and are more than adequate for providing coverage throughout a typical house. Its wireless working frequency band is 433.4-473.0MHz, multiple channels can be set, with the stepping of 400 KHz, and there are totally 100 channels.
 
-#### Working
+#### WORKING
    This system enables GPS tracking of these soldiers. It is possible by *S-Health*. The S-Health can be defined as mobile computing, medical sensors and communication technologies for health care. In this system, smart sensors such as (Temperature sensor, Pulse sensor, Wireless comm. sensor) are attached to the body of the soldiers in order to have their health status and their position in the war field.
 
 ###### The hierarchy of obtaining data from the soldier is divided into three segments:
@@ -48,14 +49,14 @@ HC-12 wireless serial port communication module is a new-generation multichannel
 
 All the data collected from the S-Health system (of each individual soldier) is sent to the Squadron leader of the second unit via a wireless sensor module (HC-12 transmitter). The same procedure is repeated and the data from the second unit (including the data of the each soldiers and the squadron leader) is sent to the third unit...i.e. Control Room, where it is all about collecting all the data at one place so if any soldier is in trouble then he/she can be tracked down and help can be sent for the individual.
 
-#### Applications
+#### APPLICATIONS
    * #### Defence Forces
-The project can be implemented in battle field or high altitude areas where health and location of soldiers is the most basic information which should be known        to the control room.
+     ###### The project can be implemented in battle field or high altitude areas where health and location of soldiers is the most basic information which should be   known to the control room.
 
    * #### Civilians
-This project can also be utilized by individuals who work in remote areas or high altitudes wherein the most basic information should be known to someone dear to them or their guardian’s.
+     ###### This project can also be utilized by individuals who work in remote areas or high altitudes wherein the most basic information should be known to someone dear to them or their guardian’s.
 
-#### Future Scope
+#### FUTURE SCOPE
    * #### Algorithms and Models
    ###### These can be implemented in the future so as to have more precision in the data collected.
 
