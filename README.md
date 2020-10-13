@@ -1,8 +1,8 @@
 # Soldiers Health Monitoring and Position Tracking System
 
-    The Soldier Health Monitoring and Position Tracking System allows the military personnel 
-    to track the current GPS position of a soldier and also checks the health status including 
-    body temperature and heartbeat of a soldier.
+    The Soldier Health Monitoring and Position Tracking System allows the military personnel to track 
+    the current GPS position of a soldier and also checks the health status including body temperature 
+    and heartbeat of a soldier.
 
 ### Introduction
 
@@ -17,7 +17,7 @@ In today’s era, enemy warfare is an important factor in any nation’s securit
   * [Temperature Sensor](#Temperature-sensor)
   * [Pulse Sensor](#pulse-sensor)
   * [GPS Senor](#gps-sensor)
-  * [HC-12](#hc-12_sensor)
+  * [HC-12](#hc-12-sensor)
   * 9V 3A Battery
   * Breadboard and jumper wires
 
