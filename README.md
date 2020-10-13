@@ -46,6 +46,8 @@ HC-12 wireless serial port communication module is a new-generation multichannel
    1. First Unit (Soldiers S-Health System)
    2. Second Unit (Squadron leader)
    3. Third unit (Control room)
+         ![Plan - design](https://user-images.githubusercontent.com/43223792/95824164-6f3ee300-0d4c-11eb-8f20-ef3653997f0c.png)
+
 
 All the data collected from the S-Health system (of each individual soldier) is sent to the Squadron leader of the second unit via a wireless sensor module (HC-12 transmitter). The same procedure is repeated and the data from the second unit (including the data of the each soldiers and the squadron leader) is sent to the third unit...i.e. Control Room, where it is all about collecting all the data at one place so if any soldier is in trouble then he/she can be tracked down and help can be sent for the individual.
 
