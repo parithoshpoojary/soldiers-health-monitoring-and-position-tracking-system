@@ -17,6 +17,8 @@ The extranal librarires used in the project.
   - PulseSensorPlayground : https://github.com/WorldFamousElectronics/PulseSensorPlayground
   - LoRa: https://www.arduino.cc/reference/en/libraries/lora/
 
+  ###### Clone the repos and add the folder to the *libraries* folder in Arduino IDE.
+
 ### METHODOLOGY
 
 #### Components Required
