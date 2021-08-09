@@ -9,12 +9,10 @@ In today’s era, enemy warfare is an important factor in any nation’s securit
 ##### This system in particular will be useful for individuals, who involve in missions or in special operations.
 
 ### Extra libraries
-Clone the Repo and add the folder in the *libraries* folder of Arduino IDE
+The extranal librarires used in the projects.
 
-- tinyGPS++ : https://github.com/mikalhart/TinyGPSPlus
-- PulseSensorPlayground : https://github.com/WorldFamousElectronics/PulseSensorPlayground
-
-
+  - tinyGPS++ : https://github.com/mikalhart/TinyGPSPlus
+  - PulseSensorPlayground : https://github.com/WorldFamousElectronics/PulseSensorPlayground
 
 
 ### METHODOLOGY
