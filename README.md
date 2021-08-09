@@ -1,81 +1,84 @@
 # Soldiers Health Monitoring and Position Tracking System
 
-The Soldier Health Monitoring and Position Tracking System allows the military personnel to track the current GPS position of a soldier and also checks           the health status including body temperature and heartbeat of a soldier.
+The Soldier Health Monitoring and Position Tracking System allows the military personnel to track the current GPS position of a soldier and also checks the health status including body temperature and heartbeat of a soldier.
 
 ### Introduction
 
-In today’s era, enemy warfare is an important factor in any nation’s security. The national security mainly depends on Army, Navy and Air Force. The most important and vital role is played by the soldiers. So, in order to protect soldiers there should be some technology too. So, to support this idea, in this project I have come up with a system which will track soldiers position as well as give their health status during a operation/mission.
+  In this modern era, enemy warfare is one of the most significant factors in any nation’s security. Nation’s security mainly depends on these three specialized uniformed services: The Army, the Air Force, and the Navy. Soldiers are a very essential part of these security systems. During any special operation or mission that’s been carried out by these services, soldiers involved tends to get injured or get lost on the battlefield. As the soldier plays a significant role in national security, we cannot afford to let them get lost, or have any delayed medics reach the injured ones. So, to protect these soldiers we should have some technology that monitors and tracks the soldiers in real-time and help minimize the time of search operation, and rescue operation efforts of the control unit. 
+
+So, to support this idea, the project presents an effectual system that is capable of monitoring the health vitals of soldiers and at the same time able to record their current position using necessary sensors. The data collected from the sensors are then transmitted to the next level of the hierarchy using wireless RF modules. This system enables the control room unit to track the location and monitor the health vitals of the soldiers constantly using the wireless body sensor network, and the GPS receiver at frequent intervals. Arduino associated with the control room constantly monitors the data received from the different subsystems of the proposed design and triggers a warning if any values cross the set threshold values. Live health monitoring and position tracking of the soldiers will ensure that they are safe on the battlefield and if any abnormalities are found in the values received to the control unit node, they make sure that relief is sent from the control unit node or the squadron leader’s node within a minimum amount of time.
 
 ##### This system in particular will be useful for individuals, who involve in missions or in special operations.
 
 ### Extra libraries
-The extranal librarires used in the projects.
+The extranal librarires used in the project.
 
-  - tinyGPS++ : https://github.com/mikalhart/TinyGPSPlus
+  - TinyGPS++ : https://github.com/mikalhart/TinyGPSPlus
   - PulseSensorPlayground : https://github.com/WorldFamousElectronics/PulseSensorPlayground
-
+  - LoRa: https://www.arduino.cc/reference/en/libraries/lora/
 
 ### METHODOLOGY
 
 #### Components Required
-  * [Arduino UNO](#arduino-uno)
-  * [Temperature Sensor](#Temperature-sensor)
-  * [Pulse Sensor](#pulse-sensor)
-  * [GPS Senor](#gps-sensor)
-  * [HC-12](#hc-12-sensor)
+  * Arduino UNO (x3)
+  * Temperature Sensor - LM35 (x2)
+  * Pulse Sensor - RC-A-4015 (x2)
+  * GPS Receiver - Neo-6M (x2)
+  * HC-12 RF module
+  * SX-1278 RF LoRa module
   * 9V 3A Battery
   * Breadboard and jumper wires
 
 #### Components Descriptions
 
-* #### Arduino UNO
-The Arduino UNO is an open-source microcontroller board based on the Microchip ATmega328P microcontroller and developed by Arduino.cc. The board is equipped with sets of digital and analog input/output (I/O) pins that may be interfaced to various expansion boards (shields) and other circuits. The board has 14 Digital pins, 6 Analog pins, and programmable with the Arduino IDE (Integrated Development Environment) via a type B USB cable. It can be powered by a USB cable or by an external 9 volt battery, though it accepts voltages between 7 and 20 volts.
-
-* #### Temperature Sensor
-LM35 is a precession Integrated circuit Temperature sensor, whose output voltage varies, based on the temperature around it. It is a small and cheap IC which can be used to measure temperature anywhere between -55°C to 150°C.
-
-* #### Pulse Senor
-Pulse Sensor is a well-designed plug-and-play heart-rate sensor for Arduino. It can be used by students, artists, athletes, makers, and game & mobile developers who want to easily incorporate live heart rate data into their projects. The sensor clips onto a fingertip or earlobe and plugs right into Arduino. It also includes an open-source monitoring app that graphs your pulse in real time. It operating voltage is 3.3V – 5V.
-      The Pulse Sensor can be connected to Arduino, or plugged into a breadboard. The front of the sensor is the pretty side with the Heart logo. This is the side that makes contact with the skin. On the front you see a small round hole, which is where the LED shines through from the back, and there is also a little square just under the LED. The square is an ambient light sensor, exactly like the one used in cellphones, tablets, and laptops, to adjust the screen brightness in different light conditions. The LED shines light into the fingertip or earlobe, or other capillary tissue, and sensor reads the light that bounces back. The back of the sensor is where the rest of the parts are mounted.
-
-* #### GPS Sensor
-GPS sensors are receivers with antennas that use a satellite-based navigation system with a network of 24 satellites in orbit around the earth to provide position, velocity, and timing information. The NEO-6MV2 is a GPS module used for navigation. The module simply checks its location on earth and provides output data which is longitude and latitude of its position. It is from a family of stand-alone GPS receivers featuring the high performance u-blox 6 positioning engine. These flexible and cost effective receivers offer numerous connectivity options in a miniature (16 x 12.2 x 2.4 mm) package. The compact architecture, power and memory options make NEO-6 modules ideal for battery operated mobile devices with very strict cost and space constraints. Its Innovative design gives NEO-6MV2 excellent navigation performance even in the most challenging environments.
-
 * #### HC-12 Sensor
 HC-12 wireless serial port communication module is a new-generation multichannel embedded wireless data transmission module. The HC-12 is a half-duplex 20 dBm (100 mW) transmitter paired with a receiver that has -117 dBm (2×10-15 W) sensitivity at 5000 bps. Paired with an external antenna, these transceivers are capable of communicating up to and possibly slightly beyond 1 km in the open and are more than adequate for providing coverage throughout a typical house. Its wireless working frequency band is 433.4-473.0MHz, multiple channels can be set, with the stepping of 400 KHz, and there are totally 100 channels.
 
+* #### SX-1278
+The SX1278 transceiver feature the LoRa long range modem that provides ultra-long range spread spectrum communication and high interference immunity whilst minimizing current consumption. Using Semtech’s patented LoRa modulation technique SX1278 can achieve a sensitivity of over -148dBm using a low cost crystal and bill of materials. The high sensitivity combined with the integrated +20dBm power amplifier yields industry leading link budget making it optimal for any application requiring range or robustness. LoRa also provides significant advantages in both blocking and selectivity over conventional modulation techniques, solving the traditional design compromise between range, interference immunity and energy consumption.
+
 #### WORKING
-   This system enables GPS tracking of these soldiers. It is possible by *S-Health*. The S-Health can be defined as mobile computing, medical sensors and communication technologies for health care. In this system, smart sensors such as (Temperature sensor, Pulse sensor, Wireless comm. sensor) are attached to the body of the soldiers in order to have their health status and their position in the war field.
+   The system has two sections, hardware and software. The system consists of 3 nodes i.e Soldier’s node, Squadron leader’s node, and Control unit node. At all the nodes Arduino constantly monitors and records data from the several sensors connected to the system, and communicates with other nodes using wireless RF modules present in the system. 
 
 ###### The hierarchy of obtaining data from the soldier is divided into three segments:
-   1. First Unit (Soldiers S-Health System)
-   2. Second Unit (Squadron leader)
-   3. Third unit (Control room)
-   
-         ![Plan - design](https://user-images.githubusercontent.com/43223792/95824164-6f3ee300-0d4c-11eb-8f20-ef3653997f0c.png)
+   1. Soldier's Node - Level 1
+   2. Squadron's Node - Level 2
+   3. Control unit Node - Level 3
 
-All the data collected from the S-Health system (of each individual soldier) is sent to the Squadron leader of the second unit via a wireless sensor module (HC-12 transmitter). The same procedure is repeated and the data from the second unit (including the data of the each soldiers and the squadron leader) is sent to the third unit...i.e. Control Room, where it is all about collecting all the data at one place so if any soldier is in trouble then he/she can be tracked down and help can be sent for the individual.
+  <p align="center">
+    <img width="400" height="300" src="https://user-images.githubusercontent.com/43223792/128725212-935d9508-f457-4ec8-bec7-f8699636639c.png">
+  </p>
+  
+  The block diagram below explains how the nodes and all the internal sensors are connected.
+  
+  <p align="center">
+    <img width="500" height="600" src="https://user-images.githubusercontent.com/43223792/128724870-6c4c61db-dd4f-469c-a0f7-886dcfbaf592.png">
+  </p>
+ 
 
-#### APPLICATIONS
+A breif explaination of all the nodes are given below:
+### Soldier's Node
+  This node comprises of body sensor networks (BSN) i.e a temperature sensor and a pulse sensor. These sensors are used to monitor the health vitals of soldiers. Temperature sensor (LM35) is used for monitoring the temperature of the soldier and his surrounding environment, and the pulse sensor (RC-A-4015) monitors the pulse rate of the soldiers as beats per minute (BPM). If there is any variance among the sensed values and the defined threshold values, then it is considered as an exigency. Along with the BSN, a GPS receiver is also added to the node, so as to locate/monitor the soldier’s position. All the data incoming from the sensors are processed and recorded by the micro controller and sent via the wireless RF transceiver module present in the system to the next node i.e Squadron leader’s node. The RF module used in the soldier’s node is HC12, as the communication range between soldier’s node and the squadron leader’s node is short as they are hardly few kms apart.   
+Additionally, to connect this node to the internet, we use the Blynk application. With the help of a USB and the laptop, we are able to connect this node to the internet. While this node is connected to the internet, the data from the sensors are uploaded to the Blynk cloud, and concurrently sent to the dashboard created to interface with the project via the cloud.
+
+
+### Squadron's Node
+  This node also comprises of body sensor networks (BSN) i.e a temperature sensor and a pulse sensor. These sensors are used to monitor the health vitals of the Squadron leader. Temperature sensor (LM35) is used for monitoring the temperature of the squadron leader and his surrounding environment, and the pulse sensor (RC-A-4015) monitors the pulse rate of the squadron leader as BPM. If there is any variance among the sensed values and the defined threshold values, then it is considered as an exigency. All the data coming from the sensors are processed and recorded by the micro controller and sent via the wireless RF transceiver module present in the system to the final node i.e Control unit node. Before sending the recorded data, foremost thing done by this node is receiving the data sent from the soldier’s node through the HC12 module present in the system. Subsequently after receiving the soldier’s data, both the data combined together i.e soldier’s data and the squadron leader’s data are sent through the RF module present in the system. Now, for sending the data to the control unit node, which is very far away from the squadron leader’s node, we use wireless RF Long Range (LoRa) module i.e SX1278, using this RF module we are easily able to send the data of both the soldier’s and the squadron leader to the control unit node which is up to ~ (25kms - 30kms) apart from each other.
+
+### Control Unit Node
+  This node includes the wireless RF LoRa module i.e SX1278, where it receives the data of both nodes i.e soldier’s and squadron leaders, from the squadron leader’s node. This node is just about monitoring, storing, and analyzing the received data from the other two node i.e Soldier’s node and the squadron leader’s node.
+Additionally, the control unit node is provided with an extra feature, where they can monitor soldier’s directly through the internet using a graphical interface/dashboard. This is possible using the blynk application on the mobile phone available at control unit node, provided the soldier’s module is also connected to the internet.
+
+
+### APPLICATIONS
    * #### Defence Forces
      ###### The project can be implemented in battle field or high altitude areas where health and location of soldiers is the most basic information which should be   known to the control room.
 
    * #### Civilians
      ###### This project can also be utilized by individuals who work in remote areas or high altitudes wherein the most basic information should be known to someone dear to them or their guardian’s.
 
-#### FUTURE SCOPE
-   * #### Algorithms and Models
-   ###### These can be introduced in the future so as to have more precision in the data collected form the soldiers.
+### Conclusion and Future Scope
+  Soldier’s being an important part of our nation’s security, their health vitals and their location needs to be regularly monitored for their safety and their efficient working. Wireless communication with IoT makes the whole experience of monitoring soldiers health vitals and their location, smart efficient and fast. Technologies like IoT has fundamentally reformed the way we live and work, it has made our life easier. Above proposed system not only monitors real-time health and location data of the soldiers but also provides necessary data to help us determine the last position and the health data of the soldiers if he gets lost, so as to track him down and send help. This system increases the efficiency of the soldiers working in the field and also reduces the effort of search and rescue operation led by control room unit at the same time. All in all, the system being compact and less in weight makes it more ideal for the soldier’s and the squadron leaders to carry the system with them, which in turns helps the control unit node to monitor their data of in real-time, even if they are kilometers apart. 
 
-   * #### Data Management 
-   ###### This can be implemented in the future so as to handle to the huge data incoming from the soldier's and the squadron's.
+There is an enormous horizon of possibilities which could be offered - new designs, advanced system could be introduced to improve the conditions and efficiency of the system, and by introducing AI/ML algorithms we can predict out in near future if any soldier might require medical attention beforehand, other than this it can also predict whether a component or sensor might need attention or replacement. Other improvements that can be included is implementing advanced security protocols/techniques on the wireless RF modules so as to make the whole process of transmission and receiving sensors data more secure and reliable.
 
-   * #### Security
-   ###### This can be introduced in the future so as to secure the RF channel from where the all the data has to transmitted and received.
-
-   * #### Power Management
-   ###### This can be implemented in the near future so that we have reduced power consumption and increased efficiency for the whole system.
-   
-   * #### BSN (Body Sensor Network)
-   ###### More efficient and technologically advanced sensors can be introduced to the system so as to have more data accuracy collected from the soldiers.
-   
