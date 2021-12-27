@@ -89,3 +89,6 @@ Additionally, the control unit node is provided with an extra feature, where the
 
 There is an enormous horizon of possibilities which could be offered - new designs, advanced system could be introduced to improve the conditions and efficiency of the system, and by introducing AI/ML algorithms we can predict out in near future if any soldier might require medical attention beforehand, other than this it can also predict whether a component or sensor might need attention or replacement. Other improvements that can be included is implementing advanced security protocols/techniques on the wireless RF modules so as to make the whole process of transmission and receiving sensors data more secure and reliable.
 
+## Contributing
+
+To contribute to the repository, open an issue or a pull request.
