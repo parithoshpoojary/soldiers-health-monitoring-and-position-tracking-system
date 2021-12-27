@@ -57,6 +57,11 @@ The SX1278 transceiver feature the LoRa long range modem that provides ultra-lon
     <img width="500" height="600" src="https://user-images.githubusercontent.com/43223792/128724870-6c4c61db-dd4f-469c-a0f7-886dcfbaf592.png">
   </p>
  
+ Circuit Diagram for the project.
+ <p align="center">
+    <img src="https://user-images.githubusercontent.com/43223792/147447506-192172a8-2695-4708-8c3d-b32fb00e8968.png">
+  </p>
+ 
 
 A breif explaination of all the nodes are given below:
 ### Soldier's Node
